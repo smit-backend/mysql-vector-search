@@ -1,0 +1,27 @@
+{
+    "name": "smit-backend/mysql-vector-search",
+    "description": "Lightweight vector embeddings integration for Laravel and MySQL schemas with cosine similarity search.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "smit-backend",
+            "homepage": "https://github.com/smit-backend"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SmitBackend\\VectorSQL\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SmitBackend\\VectorSQL\\PackageServiceProvider"
+            ]
+        }
+    }
+}
